@@ -11,18 +11,54 @@ import './App.scss';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+    <Header/>
       <div className="page-container">
+      
         <Routes>
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/product/:productId" element={<ProductPage />} />
-          <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
       </div>
 
     </BrowserRouter >
+
+
   );
 }
+// function App() {
+//   return(
+//     <Router>
+//       <div className="page-container">
+//         <Switch>
+//           <Route path="/login">
+//             <h1>Login page</h1>
+//           </Route>
+//           <Route path="/checkout">
+//             <Header/>
+//             <Checkout/>
+//           </Route>
+//           <Route path="/">
+//             <Header />
+//             <HomePage />
+//           </Route>
+//           <Route path="/CartPage">
+//             <Header/>
+//             <CartPage/>
+//           </Route>
+//           <Route path="/ProductPage">
+//             <Header/>
+//             <ProductPage/>
+//           </Route>
+//           <Route path="/LoginPage">
+//             <Header/>
+//             <LoginPage/>
+//           </Route>
+//         </Switch>
+//       </div>
+//     </Router>
+//   )
+// }
 
 export default App;
