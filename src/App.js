@@ -9,9 +9,10 @@ import HomePage from './pages/home';
 import './App.scss';
 
 function App() {
+  const localstorage = localStorage.getItem('key')
   return (
     <BrowserRouter>
-    <Header/>
+    {localstorage?<Header/>:""} 
       <div className="page-container">
       
         <Routes>
