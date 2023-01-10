@@ -2,6 +2,7 @@ import React from 'react';
 
 import BrandLogo from 'images/amazon-logo.png';
 import { Link } from 'react-router-dom';
+// import BrandLogo from 'images/amazon-logo2.png';
 
 import './Logo.scss';
 

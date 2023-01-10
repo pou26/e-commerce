@@ -29,16 +29,17 @@ function App() {
 }
 // function App() {
 //   return(
-//     <Router>
+//     <BrowserRouter>
 //       <div className="page-container">
-//         <Switch>
+//         <Routes>
 //           <Route path="/login">
 //             <h1>Login page</h1>
+//             <LoginPage/>
 //           </Route>
-//           <Route path="/checkout">
+//           {/* <Route path="/checkout">
 //             <Header/>
 //             <Checkout/>
-//           </Route>
+//           </Route> */}
 //           <Route path="/">
 //             <Header />
 //             <HomePage />
@@ -55,9 +56,9 @@ function App() {
 //             <Header/>
 //             <LoginPage/>
 //           </Route>
-//         </Switch>
+//         </Routes>
 //       </div>
-//     </Router>
+//     </BrowserRouter>
 //   )
 // }
 
